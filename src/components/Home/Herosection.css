@@ -1,0 +1,37 @@
+.hero-section {
+  /* background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 0.6054796918767507) 100%
+  ); */
+  background-color: rgb(11, 14, 17);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.hero-text {
+  width: 500px;
+}
+
+.hero-titulo {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(11, 14, 17);
+}
+
+.hero-section p {
+  color: #37474f;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(11, 14, 17);
+}
+
+.hero_img {
+  width: 500px;
+  height: 400px;
+  border-radius: 50px;
+}

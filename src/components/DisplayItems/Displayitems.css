@@ -1,0 +1,8 @@
+.scroll-items {
+  background-color: #040506;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 6.2em;
+}
