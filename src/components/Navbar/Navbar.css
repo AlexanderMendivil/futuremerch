@@ -68,6 +68,9 @@ ul {
   outline: none;
 }
 
+.h1 {
+  background-color: var(--nav-color);
+}
 .titulo {
   background-color: var(--nav-color);
   color: #080a0b;

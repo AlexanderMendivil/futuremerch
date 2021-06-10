@@ -1,5 +1,7 @@
 import React from "react"
 import Home from "./components/Home/Home"
+import Login from "./components/Login/Login"
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const App = () => {
@@ -7,10 +9,10 @@ const App = () => {
     <Router>
     <div className="App">
         <Switch>
-          <Route exact path="/" component={Home} />
-          {/* <Route path="/login" component={} />
-          <Route path="/admin" component={} />
-          */}
+          <Route exact path="/login" component={Login} />
+          <Route path="/" component={Home} />
+          <Route path="/dev" component={} />
+         
         </Switch>
     </div>
   </Router>

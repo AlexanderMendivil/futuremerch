@@ -10,7 +10,7 @@ import SearchIcon from '@material-ui/icons/Search';
     return(
         <div className="nav">
         
-        <h1 ><Link className="titulo">FUTUREMERCH </Link></h1>
+        <h1 className="h1"><Link className="titulo">FUTUREMERCH </Link></h1>
         <ul>
             <li className="item-nav">Ropa</li>
             <li className="item-nav">Accesorios</li>
