@@ -1,0 +1,65 @@
+:root {
+  --main-color: #37474f;
+  --secundary-color: #5223a0;
+  --button-color: #a573f5;
+  --nav-color: #242c37;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(106, 106, 106, 0.4206057422969187) 0%,
+      rgba(109, 114, 120, 0.6054796918767507) 100%
+    ),
+    url("../../Images/fondologin.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titulof {
+  background-color: var(--nav-color);
+  color: #080a0b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form {
+  background-color: transparent;
+  flex: 0.1;
+  margin-top: 10em;
+  padding: 2em;
+  border: 1px solid #080a0b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 5em;
+}
+
+input {
+  background-color: transparent;
+}
+
+label {
+  background-color: transparent;
+}
+.tituloform {
+  background-color: transparent;
+}
+
+.btn {
+  padding: 0.5em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #242c37;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #080a0b;
+}
