@@ -10,6 +10,7 @@
   --secundary-color: #5223a0;
   --button-color: #a573f5;
   --nav-color: rgb(36, 44, 55);
+  --nav-size: 60px;
 }
 
 .nav {
@@ -83,4 +84,50 @@ ul {
   background-color: var(--nav-color);
   color: white;
   cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button {
+  text-decoration: none;
+
+  background-color: var(--nav-color);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+}
+.icon-button:hover {
+  filter: brightness(1.2);
+}
+
+.dropdown {
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translate(-45%);
+  background-color: #080a0b;
+  border: 1px solid #37474f;
+  border-radius: 8px;
+  padding: 1em;
+  overflow: hidden;
+}
+.p {
+  color: white;
+  background-color: #080a0b;
+}
+
+.menu-item {
+  background-color: #080a0b;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: background 500ms;
+  padding: 0.5em;
 }
