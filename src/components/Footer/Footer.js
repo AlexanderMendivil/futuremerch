@@ -1,4 +1,5 @@
 import React from "react"
+import "./Footer.css"
 
 const Footer = () =>{
     return(
@@ -8,7 +9,6 @@ const Footer = () =>{
             <h2>FUTUREMERCH</h2>
             <p>@2021 FUTUREMERCH all rights reserved</p>
         </div>
-        
         
     </footer>
     )

@@ -1,0 +1,27 @@
+footer {
+  background-color: var(--nav-color);
+  height: 20vh;
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 1em;
+  background-color: var(--nav-color);
+}
+footer div h2 {
+  color: white;
+  letter-spacing: 3px;
+  margin-left: 40px;
+  background-color: var(--nav-color);
+}
+
+footer div p {
+  color: white;
+  font-weight: 200;
+  background-color: var(--nav-color);
+}
+
+/* FOOTER END*/
