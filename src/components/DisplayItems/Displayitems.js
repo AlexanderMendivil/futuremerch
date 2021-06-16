@@ -18,18 +18,21 @@ const Displayitems = () =>{
         
         
         return(
+            <div>
+
             <section className="recomendado">
-        <p>Recomendados</p>
+        <h2 className="recomendado-text">Recomendados</h2>
         <hr/>
+        </section>
     <section className="scroll-items">
       
         {items.map( item =>(
             
             <Item key={item.idDulce} titulo={item.nombreDulce} precio={item.precio} descripcion={item.tipo} />
-        ))}
+            ))}
         
 </section>
-    </section>
+            </div>
     )
 }
 

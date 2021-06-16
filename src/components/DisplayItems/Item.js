@@ -3,6 +3,10 @@ import "./Item.css"
 
 const Item = ({titulo, precio, descripcion}) =>{
 
+
+    const click = (e) =>{
+        e.preventDefault()
+    }
     return(
 
 <form className="item">
@@ -15,7 +19,7 @@ const Item = ({titulo, precio, descripcion}) =>{
                     <h1 className="titulo-item">{titulo}</h1>
                 </header>
                 
-                <h2>{precio}</h2>
+                <h2>${precio}</h2>
                 <p>{descripcion}</p>
 
                 <div className="check-item">
@@ -23,7 +27,7 @@ const Item = ({titulo, precio, descripcion}) =>{
                     <input className="checkbox" type="checkbox"/><span>M</span>
                     <input className="checkbox" type="checkbox"/><span>G</span>
                 </div>
-                <button>COMPRAR</button>
+                <button onClick={click}>COMPRAR</button>
             </div>
         </form>
 
