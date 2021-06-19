@@ -1,7 +1,7 @@
 import React from "react"
 import "./Item.css"
 
-const Item = ({titulo, precio, descripcion}) =>{
+const Item = ({titulo, precio, descripcion, imagen}) =>{
 
 
     const click = (e) =>{
@@ -11,7 +11,7 @@ const Item = ({titulo, precio, descripcion}) =>{
 
 <form className="item">
             <div className="item-img">
-                <img className="img-item" src="./images/jacket.jpg" alt=""/>
+                <img className="img-item" src={imagen} alt=""/>
             </div>
 
             <div className="item-informacion">

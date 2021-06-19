@@ -3,11 +3,11 @@
   width: 500px;
   height: 325px;
   margin-top: 1.2em;
+  margin-bottom: 1.2em;
   border-radius: 50px;
   box-shadow: 4px 3px #e3e3e3;
   border: 1px solid #ebebeb;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 

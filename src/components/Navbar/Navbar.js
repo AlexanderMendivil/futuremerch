@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 import "./Navbar.css"
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import AppsIcon from '@material-ui/icons/Apps';
 
  const Navbar = () => {
 
@@ -24,9 +23,6 @@ import AppsIcon from '@material-ui/icons/Apps';
         <Navitem className="h1" icon={<MenuIcon className="iconoMenu" />}>
         <Dropdown />
         </Navitem>
-        {/* <MenuIcon className="iconoMenu">
-           
-            </MenuIcon> */}
      
     </div>
     )
@@ -52,11 +48,9 @@ const Dropdown = () =>{
     const Dropdownitem = (props) =>{
 
         return(
-            <a href="#" className="menu-item" onClick={(e)=> e.preventDefault()}>
-                {/* <span className="icon-button">{props.leftIcon}</span> */}
+            <p className="menu-item" onClick={(e)=> e.preventDefault()}>
                 <p className="p"> {props.children} </p>
-                <span className="icon-right">{props.rightIcon}</span>
-            </a>
+            </p>
         )
     }
     

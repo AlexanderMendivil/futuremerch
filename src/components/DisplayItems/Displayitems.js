@@ -11,10 +11,10 @@ const Displayitems = () =>{
 
     useEffect(()=>{
 
-             axios.get("http://localhost:5000/api/orders").then(res =>{
+             axios.get("http://localhost:5000/api/items").then(res =>{
              setItems(res.data)
             }).catch(err => console.log(err))
-        }, [setItems])
+        }, [])
         
         
         return(
@@ -27,9 +27,9 @@ const Displayitems = () =>{
     <section className="scroll-items">
       
         {items.map( item =>(
-            
-            <Item key={item.idDulce} titulo={item.nombreDulce} precio={item.precio} descripcion={item.tipo} />
-            ))}
+
+            <Item key={item.idItem} imagen={item.imagen} titulo={item.nombreItem} precio={item.precio} descripcion={item.descripcion} />
+        ))}
         
 </section>
             </div>
