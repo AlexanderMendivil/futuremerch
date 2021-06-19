@@ -7,7 +7,9 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   background-image: linear-gradient(
       90deg,
@@ -28,8 +30,9 @@
 }
 
 .form {
+  height: 600px;
+  width: 400px;
   background-color: transparent;
-  flex: 0.1;
   margin-top: 10em;
   padding: 2em;
   border: 1px solid #080a0b;
@@ -62,4 +65,8 @@ label {
 
 .btn:hover {
   background-color: #080a0b;
+}
+
+.mensaje-error {
+  background-color: transparent;
 }
