@@ -1,0 +1,42 @@
+.insert-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-insert {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.module-insert {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+.input-insert {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--nav-color);
+  margin: 5px;
+}
+
+.btn-insert {
+  background-color: var(--nav-color);
+  color: white;
+  border: none;
+  width: 10em;
+  border-radius: 5px;
+  height: 2em;
+  margin-left: 4em;
+  cursor: pointer;
+}
+
+.btn-insert:hover {
+  background-color: var(--main-color);
+}
