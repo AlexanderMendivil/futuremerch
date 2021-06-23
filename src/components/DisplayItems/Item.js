@@ -1,11 +1,39 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
+import axios from "axios"
+
 import "./Item.css"
 
-const Item = ({titulo, precio, descripcion, imagen}) =>{
+const Item = ({titulo, precio, descripcion, imagen, talla, idItem}) => {
+        
+    const [fecha, setFecha] = useState("")
+    const [idUsuario, setidUsuario] = useState("")
 
+    useEffect(()=>{
+        getDate()
+        axios.get("http://localhost:5000/api/user").then(result =>{
+            setidUsuario(result.data[0].idUsuario)
+        })
+    },[])
 
-    const click = (e) =>{
+    const getDate = () =>{
+        const d = new Date()
+        const year = d.getFullYear()
+        const month = d.getMonth()
+        const day = d.getDay()
+        const fechaActual = `${year}-${month}-${day}`
+        setFecha(fechaActual)
+    }
+    const venta = (e) =>{
         e.preventDefault()
+
+        axios.post("http://localhost:5000/api/venta",{
+            idUsuario: idUsuario,
+            idItem: idItem,
+            fecha: fecha
+        }).then( ( result ) =>{
+
+        })
+
     }
     return(
 
@@ -23,15 +51,12 @@ const Item = ({titulo, precio, descripcion, imagen}) =>{
                 <p>{descripcion}</p>
 
                 <div className="check-item">
-                    <input className="checkbox" type="checkbox"/><span>C</span>
-                    <input className="checkbox" type="checkbox"/><span>M</span>
-                    <input className="checkbox" type="checkbox"/><span>G</span>
+                    <p>Talla: {talla}</p>
                 </div>
-                <button onClick={click}>COMPRAR</button>
+                <button onClick={venta}>COMPRAR</button>
             </div>
         </form>
 
-        
     )
 }
 

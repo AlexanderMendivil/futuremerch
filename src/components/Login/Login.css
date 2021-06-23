@@ -30,9 +30,10 @@
 }
 
 .form {
-  height: 600px;
+  height: 400px;
   width: 400px;
   background-color: transparent;
+  border-radius: 5px;
   margin-top: 10em;
   padding: 2em;
   border: 1px solid #080a0b;
@@ -43,7 +44,11 @@
 }
 
 input {
+  height: 2em;
   background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--main-color);
 }
 
 label {

@@ -1,9 +1,9 @@
 import React, {useState} from "react"
 import {Link} from "react-router-dom"
-
 import "./Navbar.css"
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+
 
  const Navbar = () => {
 
@@ -43,7 +43,7 @@ const Navitem = (props) =>{
     )
 }
 
-const Dropdown = () =>{
+export const Dropdown = ({name}) =>{
     
     const Dropdownitem = (props) =>{
 
@@ -56,7 +56,7 @@ const Dropdown = () =>{
     
     return(
         <div className="dropdown">
-            <Dropdownitem>My profile</Dropdownitem>
+            <Dropdownitem>Usuario: {name}</Dropdownitem>
         </div>
     )
 }

@@ -37,14 +37,6 @@
   margin-left: 1.2em;
 }
 
-.check-item {
-  margin-left: 2em;
-}
-
-.checkbox {
-  margin-right: 5px;
-}
-
 .item button {
   background-color: var(--button-color);
   color: white;

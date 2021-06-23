@@ -46,17 +46,17 @@ const Login = () =>{
         
         <h1 className="tituloform">FUTUREMERCH</h1>
         <label htmlFor="Email">Email:</label>
-        <input type="Email" placeholder="ejemplo@outlook.com" onChange={(e)=>{
+        <input className="input-log" type="Email" placeholder="ejemplo@outlook.com" onChange={(e)=>{
             setUsername(e.target.value)
         }}/>
         <label htmlFor="Password">Contraseña:</label>
-        <input type="password" placeholder="..." onChange={(e) =>{
+        <input className="input-log" type="password" placeholder="..." onChange={(e) =>{
          setPassword(e.target.value)
         }}/>
 
         <button className="btn" onClick={loginVerification}>entrar</button>
         {
-            (loginS) ? <Redirect to="/Home"/>
+            (loginS) ? <> <Redirect to="/Home"/></>
             :
             null
         }

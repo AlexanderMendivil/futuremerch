@@ -12,6 +12,7 @@ const Displayitems = () =>{
     useEffect(()=>{
 
              axios.get("http://localhost:5000/api/items").then(res =>{
+                 console.log(res.data)
              setItems(res.data)
             }).catch(err => console.log(err))
         }, [])
@@ -28,7 +29,7 @@ const Displayitems = () =>{
       
         {items.map( item =>(
 
-            <Item key={item.idItem} imagen={item.imagen} titulo={item.nombreItem} precio={item.precio} descripcion={item.descripcion} />
+            <Item key={item.idItem} imagen={item.imagen} titulo={item.nombreItem} precio={item.precio} descripcion={item.descripcion} talla={item.talla} idItem={item.idItem}/>
         ))}
         
 </section>
